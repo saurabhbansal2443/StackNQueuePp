@@ -25,7 +25,7 @@ public class nextGreaterElement {
         for(int i=n-2 ;i>=0;i--){
             long  ele = arr[i];
             
-            if(st.size()>0 && ele>=st.peek()){ // check 
+            while(st.size()>0 && ele>=st.peek()){ // check 
                 st.pop();                       // pop
             }
             
